@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+        {{ muscle }}
+{% endblock %}
+
+{% block main %}
+    <div id="display" class="flex-container embed-responsive embed-responsive-21by9">
+        {% for video in videos %}
+            <iframe id="{{ video }}" width="820" height="480" src="https://www.youtube-nocookie.com/embed/{{ video }}?enablejsapi=1" allowfullscreen></iframe>
+        {% endfor %}
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="{{ url_for('static', filename='checkvideo.js') }}?video_ids={{ videos | join(',') }}"></script>
+    </div>
+{% endblock %}

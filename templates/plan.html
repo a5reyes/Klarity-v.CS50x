@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Plan
+{% endblock %}
+
+{% block main %}
+    <script>
+        let days = {{ days | tojson }};
+        let month = {{ month | tojson }};
+        let year = {{ year | tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='calendar.js') }}"></script>
+    <h2 align="left" style="color: orange;">
+        {{ month_name }} {{ year }}
+    </h2>
+    <br />
+    <div class="flex-container">
+        <div class="item">
+            <table bgcolor="lightgrey" cellspacing="21" cellpadding="21">
+                <p></p>
+                <thead>
+                    <tr id="week">
+                        <td id="Sunday"><b>Sun</b></td>
+                        <td id="Monday"><b>Mon</b></td>
+                        <td id="Tuesday"><b>Tue</b></td>
+                        <td id="Wednesday"><b>Wed</b></td>
+                        <td id="Thursday"><b>Thu</b></td>
+                        <td id="Friday"><b>Fri</b></td>
+                        <td id="Saturday"><b>Sat</b></td>
+                    </tr>
+                </thead>
+
+                <tbody id="calendar">
+                </tbody>
+            </table>
+        </div>
+        <div id="workouts" class="item">
+            <table cellspacing="12" cellpadding="12">
+                <thead>
+                    <tr>
+                        <td><b>username</b></td>
+                        <td><b>fitnesslvl</b></td>
+                        <td><b>weight</b></td>
+                        <td><b>location</b></td>
+                        <td><b>focus</b></td>
+                        <td><b>muscle</b></td>
+                        <td><b>day</b></td>
+                    </tr>
+                </thead>
+                {% for workout in workouts %}
+                    <tr>
+                        <td>{{ username }}</td>
+                        <td>{{ workout.fitnesslvl }}</td>
+                        <td>{{ workout.weight }}</td>
+                        <td>{{ workout.location }}</td>
+                        <td>{{ workout.focus }}</td>
+                        <td>{{ workout.muscle }}</td>
+                        <td>{{ workout.month }}/{{ workout.day }}/{{ workout.year }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

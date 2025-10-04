@@ -1,0 +1,153 @@
+{% extends "layout.html" %}
+
+{% block title %}
+        Muscle
+{% endblock %}
+
+{% block main %}
+        <h2>Exercises by Muscle Group</h2>
+        <p>Choose the muscle group you want to target. Once in the muscle group, use the sort and filter options to find the best exercises for the equipment you have, your training experience, and goals.</p>
+        <table class="table">
+                <thead>
+                        <tr>
+                                <th scope="col">Muscle</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <td>
+                                        <td>General</td>
+                                        <td><a href="/exercises?muscle=general&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://static.vecteezy.com/system/resources/previews/009/568/065/original/the-human-body-color-illustration-muscular-man-in-full-growth-unknown-person-isolated-background-cartoon-style-medical-theme-idea-for-web-design-vector.jpg" width="200" height="125" alt="Human body" title="Human body" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Abductors</td>
+                                        <td><a href="/exercises?muscle=abductors&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/abductors.jpg" width="200" height="125" alt="Abductors Exercises" title="Abductors Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Abs</td>
+                                        <td><a href="/exercises?muscle=abs&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/abs_0.jpg" width="200" height="125" alt="Ab Exercises" title="Ab Exercises" /></a></td>
+                                </td>
+                        </tr>
+
+                        <tr>
+                                <td>
+                                        <td>Adductors</td>
+                                        <td><a href="/exercises?muscle=adductors&location={{ location }}&focus={{ focus }}" >
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/adductors.jpg" width="200" height="125" alt="Adductors Exercises" title="Adductors Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Biceps</td>
+                                        <td><a href="/exercises?muscle=biceps&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/biceps_0.jpg" width="200" height="125" alt="Bicep Exercises" title="Bicep Exercises" /></a>
+                                        </td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Calves</td>
+                                        <td><a href="/exercises?muscle=calves&location={{ location }}&focus={{ focus }}" >
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/calves_0.jpg" width="200" height="125" alt="Calf Exercises" title="Calf Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Chest</td>
+                                        <td><a href="/exercises?muscle=chest&location={{ location }}&focus={{ focus }}" >
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/chest_0.jpg" width="200" height="125" alt="Chest Exercises" title="Chest Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Forearms</td>
+                                        <td><a href="/exercises?muscle=forearms&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/forearms_0.jpg" width="200" height="125" alt="Forearm Exercises" title="Forearm Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Glutes</td>
+                                        <td><a href="/exercises?muscle=glutes&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/glutes_0.jpg" width="200" height="125" alt="Glute Exercises" title="Glute Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Hamstrings</td>
+                                        <td><a href="/exercises?muscle=hamstrings&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/hamstrings_0.jpg" width="200" height="125" alt="Hamstring Exercises" title="Hamstring Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Hip Flexors</td>
+                                        <td><a href="/exercise?muscle=hip-flexors&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/hipflexors.jpg" width="200" height="125" alt="Hip Flexor Exercises" title="Hip Flexor Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>IT Band</td>
+                                        <td><a href="/exercises?muscle=it-band&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/itband.jpg" width="200" height="125" alt="IT Band Exercises" title="IT Band Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Lats</td>
+                                        <td><a href="/exercises?muscle=lats&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/lats_0.jpg" width="200" height="125" alt="Lats Exercises" title="Lats Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Lower Back</td>
+                                        <td><a href="/exercises?muscle=lower-back&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/lowerback.jpg" width="200" height="125" alt="Lower Back Exercises" title="Lower Back Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Upper Back</td>
+                                        <td><a href="/exercises?muscle=middle-back&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/upperback.jpg" width="200" height="125" alt="Upper Back Exercises" title="Upper Back Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Neck</td>
+                                        <td><a href="/exercises?muscle=neck&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/neck.jpg" width="200" height="125" alt="Neck Exercises" title="Neck Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Obliques</td>
+                                        <td><a href="/exercises?muscle=obliques&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/obliques.jpg" width="200" height="125" alt="Obliques Exercises" title="Obliques Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Palmar Fascia</td>
+                                        <td><a href="/exercises?muscle=palmar-fascia&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/palmarfacsia.jpg" width="200" height="125" alt="Palmar Fascia Exercises" title="Palmar Fascia Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Quads</td>
+                                        <td><a href="/exercises?muscle=quads&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/quads_1.jpg" width="200" height="125" alt="Quad Exercises" title="Quad Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Shoulders</td>
+                                        <td><a href="/exercises?muscle=shoulders&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/shoulders_0.jpg" width="200" height="125" alt="Shoulder Exercises" title="Shoulder Exercises" /></a></td>
+                                </td>
+                                <td>
+                                        <td>Traps</td>
+                                        <td><a href="/exercises?muscle=traps&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/traps_0.jpg" width="200" height="125" alt="Traps Exercises" title="Traps Exercises" /></a></td>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <td>Triceps</td>
+                                        <td><a href="/exercises?muscle=triceps&location={{ location }}&focus={{ focus }}">
+                                                <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/videos/triceps_0.jpg" width="200" height="125" alt="Triceps Exercises" title="Triceps Exercises" /></a></td>
+                                </td>
+                        </tr>
+                </tbody>
+        </table>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+         Focus
+{% endblock %}
+
+{% block main %}
+    <h2>Focus & Location</h2>
+    <p>Let us know where you are exercising, your training experience, and goals.</p>
+    <form action="/focus" method="post">
+        <div class="form-group">
+            <select required name="location" class="form-select form-control" aria-label="Default select">
+                <option value=""> --- Workout Location --- </option>
+                <option value="gym"> In-gym </option>
+                <option value="home"> Home </option>
+            </select>
+            <select required name="focus" class="form-select form-control" aria-label="Default select">
+                <option value=""> --- Focus --- </option>
+                <option value="warm-up"> Warm up </option>
+                <option value="strength"> Strength building </option>
+                <option value="muscle-gain"> Muscle gain </option>
+                <option value="fat-loss"> Fat loss </option>
+                <option value="cardio"> Cardio </option>
+                <option value="flex"> Flexibility </option>
+                <option value="resistance"> Resistance training </option>
+                <option value="recovery"> Recovery </option>
+                <option value="wellbeing"> Health & Wellbeing </option>
+            </select>
+            <br>
+        </div>
+        <button style='width: 200px' class="form-group btn btn-info" type="submit">Submit</button>
+    </form>
+{% endblock %}

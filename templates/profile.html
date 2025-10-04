@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <h4>Create or edit your profile</h4>
+    <br>
+    <form action="/profile" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="name" placeholder="Name" type="text">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="weight" placeholder="Weight" type="number">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="bmi" placeholder="BMI Index" type="number">
+            <select required name="fitnesslvl" class="form-select form-control" aria-label="Default select">
+              <option value=""> Fitness Experience Level </option>
+              <option value="beginner"> Beginner </option>
+              <option value="intermediate"> Intermediate </option>
+              <option value="advanced"> Advanced </option>
+            </select>
+            <input required class="form-control" style='width: 120px' name="age" placeholder="Age" type="number" min="1">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit Profile</button>
+    </form>
+{% endblock %}

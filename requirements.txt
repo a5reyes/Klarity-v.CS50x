@@ -1,0 +1,6 @@
+Flask
+Flask-Session
+Werkzeug
+cs50
+requests
+python-dotenv
