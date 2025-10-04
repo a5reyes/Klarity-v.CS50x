@@ -1,5 +1,7 @@
 # Klarity - CS50x Version - a fitness planning app
 #### (Dated) Video Demo: https://youtu.be/OH7pMVVFAUU
+#### First Submitted on: 9/21/25
+#### Updated: 10/1/25
 #### Description:
 Klarity is a fitness planning app that can help you unlock your full potential by helping you stay on track with personalized workouts, smart planning tools, and goal-focused guidance whether you are just starting out or leveling up your fitness journey. Klarity is a Python-based application and uses Flask, HTML, Javascript, CSS and SQL to make the perfect fitness app for you.
 
